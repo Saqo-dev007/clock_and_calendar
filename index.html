@@ -1,0 +1,56 @@
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="first">
+        <div class="clock" id="clock">
+            <div class="arrow hour" id="hour"></div>
+            <div class="arrow minute" id="minute"></div>
+            <div class="arrow second" id="second"></div>
+        </div>
+    </div>
+
+    <div class="second">
+        <div class="clockd">
+            <div>
+                <span id="hourd">00</span>:
+                <span id="minuted">00</span>‎ :
+                <span id="secondd">00</span>
+            </div>
+            <div class="ampm pm" id="ampm">AM</div>
+        </div>
+
+        <button class="btn" onclick="changeAMPM()">CHANGE FORMAT</button>
+    </div>
+
+    <div class="third">
+        <div class="calendar">
+            <div class="calendar-header">
+                <button id="prev" onclick="toPrevMonth()">&#9664;</button>
+                <h2 id="monthYear">Month Year</h2>
+                <button id="next" onclick="toNextMonth()">&#9654;</button>
+            </div>
+            <div class="calendar-weekdays">
+                <div>Sun</div>
+                <div>Mon</div>
+                <div>Tue</div>
+                <div>Wed</div>
+                <div>Thu</div>
+                <div>Fri</div>
+                <div>Sat</div>
+            </div>
+            <div class="calendar-days" id="calendarDays"></div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
